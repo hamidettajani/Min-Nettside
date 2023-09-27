@@ -1,2 +1,5 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="bg-purple-700 py-8 w-full">
+    <div class="container mx-auto flex justify-center">
+        <p class="text-white text-4xl font-bold">Hamids Laboratorium</p>
+    </div>
+  </div>
