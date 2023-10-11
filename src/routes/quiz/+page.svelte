@@ -1,11 +1,11 @@
 <!--Banner på toppen-->
 <div class="bg-purple-700 py-8 w-full">
-    <div class="container mx-auto flex justify-center">
-        <p class="text-white text-6xl font-bold">Hamids Laboratorium</p>
-    </div>
+  <div class="container mx-auto flex justify-center">
+    <!--Spinnende katt og tekst-->
+    <p class="text-white text-6xl font-bold">Hamids Laboratorium</p>
   </div>
-
-<!--Interaktiv quiz-->
+</div>
+  <!--Interaktiv quiz-->
 <script>
     let currentQuestion = 0;
     let score = 0;
@@ -46,7 +46,7 @@
     score = 0;
     quizFinished = false;
   }
-  </script>
+</script>
   
   <main class="p-4 text-gray-300">
     {#if !quizFinished}
@@ -54,7 +54,7 @@
       <ul class="space-y-2">
         {#each questions[currentQuestion].options as option}
           <li>
-            <button class="px-4 w-64 py-2 bg-purple-600 text-white rounded-lg hover:bg-white hover:text-purple-600 focus:outline-none" on:click={() => checkAnswer(option)}>
+            <button class="px-4 w-64 py-2 bg-purple-600 text-white rounded-lg hover:bg-gray-300 hover:text-purple-600 focus:outline-none" on:click={() => checkAnswer(option)}>
               {option}
             </button>
           </li>
@@ -72,7 +72,7 @@
           {/if}
         </p>
         <!-- Restart knapp -->
-        <button class="p-2 mt-3 font-bold text-sm w-24 bg-purple-700 text-white rounded hover:bg-white hover:text-blue-800 focus:outline-none" on:click={restartQuiz}>
+        <button class="p-2 mt-3 font-bold text-sm w-24 bg-purple-700 text-white rounded hover:bg-gray-300 hover:text-purple-700 focus:outline-none" on:click={restartQuiz}>
          Prøv igjen!
         </button>
       </div>
