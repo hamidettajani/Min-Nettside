@@ -49,13 +49,13 @@
   }
 </script>
   
-  <main class="p-4 text-gray-300">
+  <main class="flex justify-center mt-7 p-4 text-gray-300">
     {#if !quizFinished}
       <h2 class="text-2xl font-semibold mb-4">{questions[currentQuestion].question}</h2>
       <ul class="space-y-2">
         {#each questions[currentQuestion].options as option}
           <li>
-            <button class="px-4 w-64 py-2 bg-purple-600 text-white rounded-lg hover:bg-gray-300 hover:text-purple-600 focus:outline-none" on:click={() => checkAnswer(option)}>
+            <button class="ml-5 px-4 w-64 py-2 bg-purple-700 text-white rounded-lg hover:bg-white hover:text-purple-700 focus:outline-none" on:click={() => checkAnswer(option)}>
               {option}
             </button>
           </li>
@@ -73,7 +73,7 @@
           {/if}
         </p>
         <!-- Restart knapp -->
-        <button class="p-2 mt-3 font-bold text-sm w-24 bg-purple-700 text-white rounded hover:bg-gray-300 hover:text-purple-700 focus:outline-none" on:click={restartQuiz}>
+        <button class="p-2 mt-3 font-bold text-sm w-24 bg-purple-700 text-white rounded hover:bg-white hover:text-purple-700 focus:outline-none" on:click={restartQuiz}>
          Prøv igjen!
         </button>
       </div>

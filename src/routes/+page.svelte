@@ -2,6 +2,8 @@
     import Cat from "./animation/cat.svelte";
     import Musicplayer from "./animation/musicplayer.svelte";
     import Musicnotes from "./animation/musicnotes.svelte";
+    import Quizanimation from "./animation/quizanimation.svelte";
+    import Noobworkmp3 from "./musikk/noobworkmp3.svelte";
 </script>
 <!--Banner på toppen-->
 <div class="bg-purple-700 py-10 w-full">
@@ -15,10 +17,10 @@
           <Cat /> </div>
     </div>
 </div>
-<div>
+<div class="flex flex-nowrap ml-16 mt-10">
 
   <a href="musikk">
-    <div class="flex group ml-16 mt-10">
+    <div class="flex group">
     <div class="h- w-32">
       <Musicplayer />
     </div>
@@ -27,10 +29,21 @@
       <Musicnotes />
     </div>
   </div>
-</a>
-<a href="quiz">
-  <div class="font-bold text-5xl flex flex-nowrap">
-    Quiz
-  </div>
-</a>
+  </a>
+  <a href="quiz" class="ml-10">
+    <div class="flex group">
+    <div class="h- w-32">
+      <Quizanimation />
+    </div>
+    <p class="text-5xl font-bold mt-9">Quiz</p>
+    </div>
+  </a>
 </div>
+
+
+
+<main>
+  <h1>Noobwork intro</h1>
+  <Noobworkmp3 />
+</main>
+
