@@ -1,6 +1,7 @@
 <script>
   import "/src/app.css";
   /** @type {import('tailwindcss')} */
+  import Noobworkmp3 from "./noobworkmp3.svelte";
 </script>
 
 <!--Banner på toppen-->
@@ -24,3 +25,7 @@
       <iframe class="" style="border-radius:15px" title="Playlist" src="https://open.spotify.com/embed/playlist/0y6NrkEQdihg957W0q6C78?utm_source=generator" width="19%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
   </div>
+  <main>
+    <h1>Noobwork intro</h1>
+    <Noobworkmp3 />
+  </main>

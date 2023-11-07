@@ -3,7 +3,6 @@
     import Musicplayer from "./animation/musicplayer.svelte";
     import Musicnotes from "./animation/musicnotes.svelte";
     import Quizanimation from "./animation/quizanimation.svelte";
-    import Noobworkmp3 from "./musikk/noobworkmp3.svelte";
 </script>
 <!--Banner på toppen-->
 <div class="bg-purple-700 py-10 w-full">
@@ -38,12 +37,9 @@
     <p class="text-5xl font-bold mt-9">Quiz</p>
     </div>
   </a>
+  <a href="kalkulator" class="ml-10">
+    <p class="text-5xl font-bold mt-9">Kalkulator</p>
+  </a>
 </div>
 
-
-
-<main>
-  <h1>Noobwork intro</h1>
-  <Noobworkmp3 />
-</main>
 
