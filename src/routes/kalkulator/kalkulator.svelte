@@ -21,29 +21,48 @@
       resultat = "Ugyldig input"; // Feilmelding til ugyldig tall
       return;
     }
+  if (num1 || num2 == "-") {
+    resultat = -num1 + (-num2)
+  }
+  if (operatør === "+") {
+    resultat = num1 + num2; // Addisjon
+  } else if (operatør === "-") {
+    resultat = num1 - num2; // Subtraksjon
+  } else if (operatør === "*") {
+    resultat = num1 * num2; // Multiplikasjon
+  } else if (operatør === "/") {
+  if (num2 === 0) {
+    // Sjekker for divisjon med 0
+    resultat = "Kan ikke dele på 0..."; // Feilmelding for divisjon med 0
+  } else {
+    resultat = num1 / num2; // Divisjon
+  }
+} else {
+  resultat = "Ugyldig operatør"; // Feilmelding for ugyldig operatør
+}
 
-    switch (operatør) {
-      case "+":
-        resultat = num1 + num2; // addisjon
-        break;
-      case "-":
-        resultat = num1 - num2; // subtraksjon
-        break;
-      case "*":
-        resultat = num1 * num2; // multiplikasjon
-        break;
-      case "/": 
-        if (num2 === 0) { 
-          // Skjekker for divisjon med 0
-          resultat = "Kan ikke dele på 0..."; // Feilmelding for divisjon med 0
-        } else {
-          resultat = num1 / num2; // divisjon
-        }
-        break;
-      default:
-        resultat = "Ugyldig operatør"; // Feilmelding for ugyldig operatør
-        break;
-    }
+    // switch (operatør) {
+    //   case "+":
+    //     resultat = num1 + num2; // addisjon
+    //     break;
+    //   case "-":
+    //     resultat = num1 - num2; // subtraksjon
+    //     break;
+    //   case "*":
+    //     resultat = num1 * num2; // multiplikasjon
+    //     break;
+    //   case "/": 
+    //     if (num2 === 0) { 
+    //       // Skjekker for divisjon med 0
+    //       resultat = "Kan ikke dele på 0..."; // Feilmelding for divisjon med 0
+    //     } else {
+    //       resultat = num1 / num2; // divisjon
+    //     }
+    //     break;
+    //   default:
+    //     resultat = "Ugyldig operatør"; // Feilmelding for ugyldig operatør
+    //     break;
+    // }
   }
 </script>
 
