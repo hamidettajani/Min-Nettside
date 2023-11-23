@@ -1,22 +1,25 @@
 <script lang="ts">
-    import { onMount } from "svelte";
-    import lottie from 'lottie-web'
+  import { onMount } from "svelte";
+  import Lottie from "lottie-web";
+  import * as LottiePlayer from "@lottiefiles/lottie-player";
 
-    let animationContainer: HTMLElement
 
-    onMount(()=>{
-        lottie.loadAnimation({
-            container: animationContainer,
-            path: 'https://lottie.host/2365a0e2-5d4f-4fa0-be4c-4e2ddca6ecae/VqqsC73zis.json'
-        })
-    })
+  let animationContainer: HTMLElement
 
-    let isVisible = false;
+ 
+  onMount(()=>{
+      Lottie.loadAnimation({
+          container: animationContainer,
+          path: 'https://lottie.host/2365a0e2-5d4f-4fa0-be4c-4e2ddca6ecae/VqqsC73zis.json'
+      })
+  })
+
+  let isVisible = false;
   
-    // Trigger the animation when the component mounts
-    onMount(() => {
-      isVisible = true;
-    });
+  // Trigger the animation when the component mounts
+  onMount(() => {
+    isVisible = true;
+  });
 </script>
   
 
