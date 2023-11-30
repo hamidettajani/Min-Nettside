@@ -1,10 +1,9 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import Lottie from "lottie-web";
-  import * as LottiePlayer from "@lottiefiles/lottie-player";
 
 
-  let animationContainer: HTMLElement
+  let animationContainer
 
  
   onMount(()=>{
