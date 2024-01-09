@@ -40,6 +40,9 @@
   <a href="kalkulator" class="ml-10">
     <p class="text-5xl font-bold mt-9">Kalkulator</p>
   </a>
+  <a href="spill" class="ml-10">
+    <p class="text-5xl font-bold mt-9">Spill</p>
+  </a>
 </div>
 
 

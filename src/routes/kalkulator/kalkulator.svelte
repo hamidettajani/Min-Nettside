@@ -84,54 +84,41 @@
   }
 </script>
 
-<div id="kalkulatorBody" class="bg-black w-305px margin-auto padding-5px">
-  <input id="AC" type="button" on:click={nullstill} value="AC" class=""/>
-  <span id="resultat" class="text-4xl font-bold">0</span>
-</div>
-
-<div class="color-white bg-black-400 w-60px h-60px">
-  <input type="button" on:click={() => tall('7')} value="7" class="bg-gray-300 px-4 py-2 rounded"/>
-  <input type="button" on:click={() => tall('8')} value="8" class="bg-gray-300 px-4 py-2 rounded"/>
-  <input type="button" on:click={() => tall('9')} value="9" class="bg-gray-300 px-4 py-2 rounded"/>
-  <input type="button" on:click={() => operatør('+')} value="+" class="bg-gray-300 px-4 py-2 rounded"/>
-</div>
-
-<div class="flex justify-center space-x-2 my-4">
-  <input type="button" on:click={() => tall('4')} value="4" class="bg-gray-300 px-4 py-2 rounded"/>
-  <input type="button" on:click={() => tall('5')} value="5" class="bg-gray-300 px-4 py-2 rounded"/>
-  <input type="button" on:click={() => tall('6')} value="6" class="bg-gray-300 px-4 py-2 rounded"/>
-  <input type="button" on:click={() => operatør('-')} value="-" class="bg-gray-300 px-4 py-2 rounded"/>
-</div>
-
-<div class="flex justify-center space-x-2 my-4">
-  <input type="button" on:click={() => tall('1')} value="1" class="bg-gray-300 px-4 py-2 rounded"/>
-  <input type="button" on:click={() => tall('2')} value="2" class="bg-gray-300 px-4 py-2 rounded"/>
-  <input type="button" on:click={() => tall('3')} value="3" class="bg-gray-300 px-4 py-2 rounded"/>
-  <input type="button" on:click={() => operatør('*')} value="*" class="bg-gray-300 px-4 py-2 rounded"/>
-</div>
-
-<div class="flex justify-center space-x-2 my-4">
-  <input type="button" on:click={() => tall('0')} value="0" class="bg-gray-300 px-4 py-2 rounded"/>
-  <input type="button" on:click={() => tall('.')} value="." class="bg-gray-300 px-4 py-2 rounded"/>
-  <input id="løs" type="button" on:click={() => regnutQueue(queue)} value="=" class="bg-gray-300 px-4 py-2 rounded"/>
-  <input type="button" on:click={() => operatør('/')} value="/" class="bg-gray-300 px-4 py-2 rounded"/>
-</div>
-
-<!-- <div class="w-1/4 mx-auto p-4">
-  <h1 class="text-2xl font-semibold">Kalkulator</h1>
-
-  <div class="flex justify-center mt-5">
-    <input class="p-4 w-64 bg-gray-200 text-black" type="text" 
-    placeholder="Skriv inn et regnestykke"
-    bind:value={regnestykke}
-    />
-
-    <button class="w-1/2 p-4 bg-purple-600 text-white hover:bg-purple-700" on:click={løsregnestykke}>
-      Regn ut
-    </button>
-    
-  </div>
-  <p class="text-lg font-bold mt-4">
-    Resultat: {resultat}
-  </p>
+<!-- <span id="resultat" class="right- text-4xl font-bold">0</span>
+<div class="">
+  <input id="AC" type="button" on:click={nullstill} value="AC" class="cursor-pointer text-3xl font-bold"/>
 </div> -->
+
+<div class="flex justify-start space-x-2 my-4">
+  <input id="AC" type="button" on:click={nullstill} value="AC" class="ml-56 bg-amber-600 text-white font-bold px-2.5 py-2 rounded cursor-pointer"/>
+  <span id="resultat" class="text-3xl font-bold">0</span>
+  <div class="flex-grow"></div>
+</div>
+
+<div class="flex justify-center space-x-2 my-4">
+  <input type="button" on:click={() => tall('7')} value="7" class="bg-neutral-900 text-white px-4 py-2 rounded cursor-pointer"/>
+  <input type="button" on:click={() => tall('8')} value="8" class="bg-neutral-900 text-white px-4 py-2 rounded cursor-pointer"/>
+  <input type="button" on:click={() => tall('9')} value="9" class="bg-neutral-900 text-white px-4 py-2 rounded cursor-pointer"/>
+  <input type="button" on:click={() => operatør('+')} value="+" class="bg-amber-600 text-white px-3.5 py-2 rounded cursor-pointer"/>
+</div>
+
+<div class="flex justify-center space-x-2 my-4">
+  <input type="button" on:click={() => tall('4')} value="4" class="bg-neutral-900 text-white px-4 py-2 rounded cursor-pointer"/>
+  <input type="button" on:click={() => tall('5')} value="5" class="bg-neutral-900 text-white px-4 py-2 rounded cursor-pointer"/>
+  <input type="button" on:click={() => tall('6')} value="6" class="bg-neutral-900 text-white px-4 py-2 rounded cursor-pointer"/>
+  <input type="button" on:click={() => operatør('-')} value="-" class="bg-amber-600 text-white px-4 py-2 rounded cursor-pointer"/>
+</div>
+
+<div class="flex justify-center space-x-2 my-4">
+  <input type="button" on:click={() => tall('1')} value="1" class="bg-neutral-900 text-white px-4 py-2 rounded cursor-pointer"/>
+  <input type="button" on:click={() => tall('2')} value="2" class="bg-neutral-900 text-white px-4 py-2 rounded cursor-pointer"/>
+  <input type="button" on:click={() => tall('3')} value="3" class="bg-neutral-900 text-white px-4 py-2 rounded cursor-pointer"/>
+  <input type="button" on:click={() => operatør('*')} value="*" class="bg-amber-600 text-white px-4 py-2 rounded cursor-pointer"/>
+</div>
+
+<div class="flex justify-center space-x-2 my-4">
+  <input type="button" on:click={() => tall('0')} value="0" class="bg-neutral-900 text-white px-4 py-2 rounded cursor-pointer"/>
+  <input type="button" on:click={() => tall('.')} value="." class="bg-neutral-900 text-white px-4 py-2 rounded cursor-pointer"/>
+  <input id="løs" type="button" on:click={() => regnutQueue(queue)} value="=" class="bg-amber-600 text-white px-4 py-2 rounded cursor-pointer"/>
+  <input type="button" on:click={() => operatør('/')} value="/" class="bg-amber-600 text-white px-4 py-2 rounded cursor-pointer"/>
+</div>
