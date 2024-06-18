@@ -92,7 +92,7 @@
 <div class="flex justify-start space-x-2 my-4">
   <input id="AC" type="button" on:click={nullstill} value="AC" class="ml-56 bg-amber-600 text-white font-bold px-2.5 py-2 rounded cursor-pointer"/>
   <span id="resultat" class="text-3xl font-bold">0</span>
-  <div class="flex-grow"></div>
+  <div class=""></div>
 </div>
 
 <div class="flex justify-center space-x-2 my-4">
